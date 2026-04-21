@@ -128,18 +128,6 @@ http://localhost/Project/captcha.php
 
 ---
 
-## 👨‍⚕️ Viewing or Adding More Doctors
-
-To add more doctor accounts:
-
-* Open the `edoc` database
-* Go to the `doctor` table
-* Add new doctor email and password manually or 
-
-All doctor credentials are stored in the database.
-
----
-
 ## ✨ Features
 
 * Patient registration and login
@@ -149,6 +137,22 @@ All doctor credentials are stored in the database.
 * CAPTCHA security for login
 * Responsive UI using Bootstrap
 * AJAX-based smooth interactions
+
+---
+
+📄 Documentation
+
+The official project documentation file is named:
+
+Project-Documentation
+
+It includes:
+
+System analysis
+Requirement specification
+System design
+Implementation details
+Testing and deployment process
 
 ---
 
@@ -170,4 +174,6 @@ It helps understand:
 * Ensure project folder name is **Project**
 * Database name must be **edoc**
 * GD extension must be enabled for CAPTCHA to work
+* Ensure project runs on local server (XAMPP)
+* All credentials provided are for testing purposes only
 
