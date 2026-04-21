@@ -1,0 +1,233 @@
+  .chatbot-box {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+
+  }
+
+  .chatbot-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .chatbot-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chatbot-message {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .chatbot-options button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .chatbot-options button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+
+  .response-box {
+    height: 70px;
+    /* Maximum height */
+    overflow-y: auto;
+    /* Scroll if content exceeds height */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #eef2ff;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .button-grid {
+    display: flex;
+    gap: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  .button-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .typing-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 60px;
+
+  }
+
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 14px;
+    background: #e2eaff;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .typing-indicator .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 4px;
+    background-color: #3a4fe0;
+    border-radius: 50%;
+    animation: typing-bounce 1.2s infinite ease-in-out;
+  }
+
+  .typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes typing-bounce {
+
+    0%,
+    80%,
+    100% {
+      transform: scale(0);
+    }
+
+    40% {
+      transform: scale(1);
+    }
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .bubble {
+    background-color: #e0eaff;
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Zoom animation */
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.08);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animated-header {
+    animation: zoomInOut 2s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* FOR SIDEBAR */
+  .menu-active .menu-text {
+    color: var(--primarycolor);
+  }
+
+  .chatbot-icon {
+    transition: filter 0.3s ease;
+  }
+
+  .menu-btn:hover .chatbot-icon {
+    filter: brightness(1.3);
+  }
+
+  .menu-label {
+    color: #000;
+    /* default color */
+    transition: color 0.3s ease 0.2s;
+    /* Delay only for text */
+  }
+
+
+  .menu-btn:hover .menu-label {
+    color: #0275d8;
+    /* blue */
+  }
+
+
+  /* Hover IN: text hover triggers icon first, then text */
+  /* 🟢 Hover IN — icon first, then text */
+  .menu-btn:hover .chatbot-icon {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(734%) hue-rotate(190deg) brightness(96%) contrast(95%);
+    transition-delay: 0s;
+  }
+
+  .menu-btn:hover .menu-label {
+    color: #0275d8;
+    transition-delay: 0.25s;
+    /* text color change AFTER icon */
+  }
+
+  /* 🔴 Hover OUT — text resets first, icon after */
+  .menu-btn:not(:hover) .menu-label {
+    color: #000;
+    transition-delay: 0s;
+    /* text resets immediately */
+  }
+
+  .menu-btn:not(:hover) .chatbot-icon {
+    filter: none;
+    transition-delay: 0.25s;
+    /* icon resets after text */
+  }

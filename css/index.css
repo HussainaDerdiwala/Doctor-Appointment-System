@@ -1,0 +1,165 @@
+/* ORIGINAL STYLES */
+body {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.full-height {
+    background: rgba(26, 26, 26, 0.548);
+    background-attachment: fixed;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.heading-text {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-text2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.register-btn {
+    background-color: rgba(240, 248, 255, 0.589);
+    color: #345cc4;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.edoc-logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 23px;
+    padding-left: 20px;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.edoc-logo-sub {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 15px;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.nav-item:hover {
+    color: #f0f0f0;
+}
+
+.footer-hashen {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    font-size: 18px;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.logo {
+    height: 16%;
+    width: 16%;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+/* NEW: RESPONSIVE ENHANCEMENTS */
+.responsive-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    .heading-text {
+        font-size: 32px;
+        line-height: 45px;
+        margin-top: 10%;
+    }
+
+    .sub-text2 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-hashen {
+        font-size: 14px;
+        left: 10%;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .sub-text2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .logo {
+        width: 60%;
+        height: auto;
+    }
+
+    .nav-item {
+        font-size: 13px;
+        padding: 2px 6px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-hashen {
+        font-size: 12px;
+        left: 5%;
+    }
+}
